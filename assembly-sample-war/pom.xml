@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>de.kosmalla.sandra.wicket.spring.maven.demo</groupId>
+        <artifactId>wicket-spring-maven-demo</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    
+    <artifactId>assembly-sample-war</artifactId>
+    
+    <packaging>war</packaging>
+    
+    <name>assembly-sample-war</name>
+    
+    <dependencies>
+        <dependency>
+            <groupId>de.kosmalla.sandra.wicket.spring.maven.demo</groupId>
+            <artifactId>wicket-module</artifactId>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>de.kosmalla.sandra.wicket.spring.maven.demo</groupId>
+                        <artifactId>assembly-descriptor</artifactId>
+                        <version>${project.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>distro-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <descriptorRefs>
+                                <descriptorRef>TEST</descriptorRef>
+                                <descriptorRef>STAGE</descriptorRef>
+                                <descriptorRef>PROD</descriptorRef>
+                            </descriptorRefs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
