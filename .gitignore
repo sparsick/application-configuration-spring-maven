@@ -1,0 +1,5 @@
+/wicket-module/target/
+/jndi-sample-war/target/
+/assembly-sample-war/target/
+/assembly-descriptor/target/
+/database/target/
