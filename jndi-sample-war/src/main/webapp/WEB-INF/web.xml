@@ -17,7 +17,8 @@
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>classpath:META-INF/spring/*.xml</param-value>
+        <param-value>classpath*:META-INF/spring/demo-context.xml
+                     classpath*:META-INF/spring/jndi-context.xml   </param-value>
     </context-param>
 
 

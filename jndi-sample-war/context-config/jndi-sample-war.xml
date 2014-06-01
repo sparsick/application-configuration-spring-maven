@@ -1,5 +1,5 @@
 <Context docBase="/opt/tomcat/warfiles/jndi-sample-war.war" antiResourceLocking="true">
 	<Environment name="username" value="demo" type="java.lang.String" override="false"/>
 	<Environment name="password" value="demo" type="java.lang.String" override="false"/>
-	<Environment name="url" value="jdbc:mysql://192.168.56.101:3306/wicket_demo" type="java.lang.String" override="false"/>
+	<Environment name="url" value="jdbc:mysql://localhost:3306/wicket_demo" type="java.lang.String" override="false"/>
 </Context>
