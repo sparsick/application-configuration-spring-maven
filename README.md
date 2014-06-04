@@ -1,0 +1,2 @@
+wicket-spring-maven-demo
+========================
