@@ -6,7 +6,6 @@ This project demonstrates several aspects. First aspect is how a Maven project c
 ## Apache Wicket and Spring Framework
 This demo web application based on the wicket-quickstart Maven archetype. The result of the archetype is adjusted by querying a database and showing the query result and Spring Framework is integrated in this web application. `wicket-module` describes the application include the Spring application context, the GUI and database access logic. `assembly-sample-war` and `jndi-sample-war` include the deployment descriptor for the web application deployment (`war` artifact).  
 
-
 ## Deployment Configuration
 The database connection (see [wicket-module/src/main/resources/META-INF/spring/demo-context.xml](https://github.com/skosmalla/wicket-spring-maven-demo/blob/master/wicket-module/src/main/resources/META-INF/spring/demo-context.xml)) is configurable by two mechanism. 
 
