@@ -1,3 +1,8 @@
+### Build Status
+
+[![Build Status](https://travis-ci.org/skosmalla/wicket-spring-maven-demo.svg?branch=master)](https://travis-ci.org/skosmalla/wicket-spring-maven-demo)
+================================
+
 wicket-spring-maven-demo
 ========================
 
