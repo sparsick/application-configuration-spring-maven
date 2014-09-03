@@ -1,6 +1,6 @@
 #!/bin/bash
 # 
-# Install and prepare mysql instance based on the description found in mysql/einrichtung.txt
+# Install and prepare mysql instance
 # 
 ############
 
