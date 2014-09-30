@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/jndi-sample-war"/>
+<Context antiJARLocking="true" path="/jndi-sample-war">
+    	<Environment name="username" value="demo" type="java.lang.String" override="false"/>
+	<Environment name="password" value="demo" type="java.lang.String" override="false"/>
+	<Environment name="url" value="jdbc:mysql://192.168.56.101:3306/wicket_demo" type="java.lang.String" override="false"/>
+</Context>

@@ -4,27 +4,28 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:jee="http://www.springframework.org/schema/jee"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
 ">
-    <bean id="propertyConfigurer"
-              class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-        <property name="properties">
-            <bean class="java.util.Properties">
-                <constructor-arg>
-                    <map>
-                        <entry key="database.username">
-                            <jee:jndi-lookup jndi-name="java:comp/env/username" />
-                        </entry>
-                        <entry key="database.password">
-                            <jee:jndi-lookup jndi-name="java:comp/env/password" />
-                        </entry>
-                        <entry key="database.url">
-                            <jee:jndi-lookup jndi-name="java:comp/env/url" />
-                        </entry>
-                    </map>
-                </constructor-arg>
-            </bean>
-        </property>
-    </bean>
+    	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="properties">
+			<bean class="java.util.Properties">
+				<constructor-arg>
+					<map>
+						<entry key="username">
+							<jee:jndi-lookup jndi-name="java:comp/env/username" />
+						</entry>
+						<entry key="password">
+							<jee:jndi-lookup jndi-name="java:comp/env/password" />
+						</entry>
+						<entry key="url">
+							<jee:jndi-lookup jndi-name="java:comp/env/url" />
+						</entry>
+					</map>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
 
 </beans>
