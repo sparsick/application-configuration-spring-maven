@@ -1,4 +1,4 @@
-package de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp.domain;
+package de.kosmalla.sandra.sample.wicket.webapp.domain;
 
 import java.io.Serializable;
 

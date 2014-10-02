@@ -1,4 +1,4 @@
-package de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp;
+package de.kosmalla.sandra.sample.wicket.webapp;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;

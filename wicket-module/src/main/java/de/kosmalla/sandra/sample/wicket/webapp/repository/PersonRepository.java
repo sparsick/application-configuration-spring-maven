@@ -1,4 +1,4 @@
-package de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp.repository;
+package de.kosmalla.sandra.sample.wicket.webapp.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -7,7 +7,7 @@ import java.util.List;
 import javax.sql.DataSource;
 
 import org.springframework.stereotype.Repository;
-import de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp.domain.Person;
+import de.kosmalla.sandra.sample.wicket.webapp.domain.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

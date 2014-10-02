@@ -1,8 +1,8 @@
-package de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp;
+package de.kosmalla.sandra.sample.wicket.webapp;
 
 import java.util.List;
 
-import de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp.domain.Person;
+import de.kosmalla.sandra.sample.wicket.webapp.domain.Person;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.list.ListItem;
 import org.apache.wicket.markup.html.list.ListView;

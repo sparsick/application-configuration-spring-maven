@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/jndi-sample-war"/>
+<Context antiJARLocking="true" path="/assembly-sample-war"/>

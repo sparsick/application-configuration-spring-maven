@@ -7,7 +7,8 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
         http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
 ">
-    	<bean id="propertyConfigurer"
+    <!-- PropertyPlaceholderConfigurer set up before Spring 3.1 -->
+<!--    	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="properties">
 			<bean class="java.util.Properties">
@@ -26,6 +27,11 @@
 				</constructor-arg>
 			</bean>
 		</property>
-	</bean>
+	</bean>-->
+        
+        <!-- PropertySourcesPlaceholderConfigurer set up since Spring 3.1 -->
+        <!-- it is automatically asking a JNDIPropertySource after the properties.
+        Matching mechanism for JNDI enviroment variable and property in Spring is "java:comp/env/" + value vs ${value}  -->
+        <context:property-placeholder/>
 
 </beans>

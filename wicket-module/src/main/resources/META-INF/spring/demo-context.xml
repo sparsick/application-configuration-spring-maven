@@ -5,9 +5,9 @@
 	 http://www.springframework.org/schema/context
          http://www.springframework.org/schema/context/spring-context.xsd">
 	<context:annotation-config/>
-	<context:component-scan base-package="de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp"/>
+	<context:component-scan base-package="de.kosmalla.sandra.sample.wicket.webapp"/>
 
-	<bean id="wicketApplication" class="de.kosmalla.sandra.wicket.spring.maven.demo.wicket.webapp.WicketApplication"/>
+	<bean id="wicketApplication" class="de.kosmalla.sandra.sample.wicket.webapp.WicketApplication"/>
 
 	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
 		destroy-method="close">
