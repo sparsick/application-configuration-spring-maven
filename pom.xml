@@ -25,7 +25,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>de.kosmalla.sandra.wicket.spring.maven.demo</groupId>
+                <groupId>de.kosmalla.sandra.samples</groupId>
                 <artifactId>wicket-module</artifactId>
                 <version>${project.version}</version>
             </dependency>            
