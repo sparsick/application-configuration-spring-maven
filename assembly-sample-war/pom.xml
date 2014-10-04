@@ -27,7 +27,7 @@
                 <version>2.4</version>
                 <dependencies>
                     <dependency>
-                        <groupId>de.kosmalla.sandra.wicket.spring.maven.demo</groupId>
+                        <groupId>de.kosmalla.sandra.samples</groupId>
                         <artifactId>assembly-descriptor</artifactId>
                         <version>${project.version}</version>
                     </dependency>
